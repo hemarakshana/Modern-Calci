@@ -1,0 +1,75 @@
+*
+{
+  transition:all 0.15s;
+}
+
+body
+{
+  background:#444;
+/*   border:2px dashed red; */
+  display:grid;
+  place-content:center;
+  margin:0px;
+  height:100vh;
+}
+
+.cal
+{
+  background:#222;
+  box-shadow:0px 5px 10px rgba(0,0,0,0.3);
+  color:#0f0;
+  border:2px solid black;
+  font-family:arial;
+  padding:20px;
+  width:400px;
+  user-select:none;
+  display:grid;
+  gap:20px;
+  border-radius:20px;
+  
+}
+
+.screen
+{
+  background:#84b579;
+  color:#000;
+  padding:10px;
+  font-size:20px;
+  border-radius:10px;
+   box-shadow:inset -5px -5px 5px rgba(255,255,255,0.3),
+    inset 5px 5px 5px rgba(0,0,0,0.3);
+  min-height:70px;
+  text-align:right;
+}
+
+.btns-container
+{
+/*   border:2px dashed red; */
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  font-size:26px;
+}
+
+.btn
+{
+  background:#333;
+  display:grid;
+  place-content:center;
+  padding:10px;
+  box-shadow:inset 5px 5px 5px rgba(255,255,255,0.3),
+    inset -5px -5px 5px rgba(0,0,0,0.3);
+    border-radius:10px;
+}
+
+#equals-btn
+{
+/*   grid-column-start:2;
+    grid-column-end:4; */
+}
+
+.btn:active
+{
+  box-shadow:inset -2px -2px 5px rgba(255,255,255,0.3),
+    inset 2px 2px 5px rgba(0,0,0,0.3);
+}
